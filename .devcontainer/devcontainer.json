@@ -10,5 +10,8 @@
   "forwardPorts": [
     "22111",
     "22112"
-  ]
+  ],
+  "remoteUser": "vscode",
+  "forwardAgent": true
+
 }
