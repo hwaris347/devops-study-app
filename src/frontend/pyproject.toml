@@ -1,0 +1,25 @@
+[project]
+name = "frontend"
+version = "0.1.0"
+description = "Frontend for DevOps Study Tracker application"
+readme = "README.md"
+authors = [
+    { name = "hwaris347", email = "hwaris347@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "flash>=1.0.3",
+    "flask>=3.1.2",
+    "requests>=2.32.5",
+]
+
+[project.scripts]
+frontend = "frontend.main:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/backend"]
+
+
+[build-system]
+requires = ["uv_build>=0.9.6,<0.10.0"]
+build-backend = "uv_build"
