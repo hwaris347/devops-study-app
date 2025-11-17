@@ -19,7 +19,7 @@ dependencies = [
 frontend = "frontend.main:main"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/backend"]
+packages = ["src/frontend"]
 
 
 [build-system]
